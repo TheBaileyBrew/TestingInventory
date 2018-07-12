@@ -22,28 +22,21 @@ public class InventoryContract {
         */
         public final static String _ID = BaseColumns._ID;
 
+
+        /*
+         * Model of equipment
+         * The only possible values are @Link #MOTOROLA_MC3100, @Link #MOTOROLA_MC3200,
+         * @Link #UNITECH_HT682, @Link #APPLE_IPHONE, @Link #APPLE_IPAD
+         * Type: INTEGER
+         */
+        public final static String COLUMN_MODEL = "equipment";
+
         /*
         * Type of inventory item
         * The only possible values are @Link #CUSTOMER_TYPE, @Link #SALES_TYPE, @LINK #IT_TYPE
         * Type: INTEGER
         */
         public final static String COLUMN_MODEL_TYPE = "type";
-        public static final int CUSTOMER_TYPE = 0;
-        public static final int SALES_TYPE = 1;
-        public static final int IT_TYPE = 2;
-
-        /*
-        * Model of equipment
-        * The only possible values are @Link #MOTOROLA_MC3100, @Link #MOTOROLA_MC3200,
-        * @Link #UNITECH_HT682, @Link #APPLE_IPHONE, @Link #APPLE_IPAD
-        * Type: INTEGER
-        */
-        public final static String COLUMN_MODEL = "model";
-        public static final int MOTOROLA_MC3100 = 0;
-        public static final int MOTOROLA_MC3200 = 1;
-        public static final int UNITECH_HT682 = 2;
-        public static final int APPLE_IPHONE = 3;
-        public static final int APPLE_IPAD = 4;
 
         /*
         * Type of Inventory
@@ -52,9 +45,6 @@ public class InventoryContract {
         * Type: INTEGER
         */
         public final static String COLUMN_INVENTORY_TYPE = "source";
-        public static final int TYPE_NEW = 0;
-        public static final int TYPE_USED = 1;
-        public static final int TYPE_TEST = 2;
 
         /*
         * Name of User Adding Device
@@ -90,5 +80,20 @@ public class InventoryContract {
         * Type: TEXT
         */
         public final static String COLUMN_MODEL_SERIAL_NUMBER = "serialnumber";
+
+
+        public static final int CUSTOMER_TYPE = 0;
+        public static final int SALES_TYPE = 1;
+        public static final int IT_TYPE = 2;
+
+        public static final int MOTOROLA_MC3100 = 0;
+        public static final int MOTOROLA_MC3200 = 1;
+        public static final int UNITECH_HT682 = 2;
+        public static final int APPLE_IPHONE = 3;
+        public static final int APPLE_IPAD = 4;
+
+        public static final int TYPE_NEW = 0;
+        public static final int TYPE_USED = 1;
+        public static final int TYPE_TEST = 2;
     }
 }
